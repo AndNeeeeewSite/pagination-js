@@ -1,0 +1,21 @@
+{
+  "name": "pagination",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndNeeeeewSite/pagination-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndNeeeeewSite/pagination-js/issues"
+  },
+  "homepage": "https://github.com/AndNeeeeewSite/pagination-js#readme",
+  "description": "",
+  "dependencies": {
+    "parcel": "^2.14.4"
+  }
+}
