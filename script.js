@@ -1,4 +1,5 @@
 gallary = document.querySelector('#image-gallery')
+KEY = '49956837-fedce1a4a04ffbd3c6eb71c88'
 function render(data){
   images = data.hits
   for(imageArr of images){
@@ -20,7 +21,7 @@ function clearRender(){
   }
 }
 
-async function fetchImages(key,page,max_per_page){
+function fetchImages(key,page,max_per_page){
   reqURL = `https://pixabay.com/api/?key=${key}&editors_choice=true&safesearch=true&page=${page}&per_page=${max_per_page}`
   fetch(reqURL)
   .then(response => response.json())
@@ -40,7 +41,7 @@ maxPerPage = 5
 nowPage = 1
 refreshButton.addEventListener('click',function(){
   nowPage++
-  fetchImages('49956837-fedce1a4a04ffbd3c6eb71c88',nowPage,maxPerPage)
+  fetchImages(KEY,nowPage,maxPerPage)
 })
 
-fetchImages('49956837-fedce1a4a04ffbd3c6eb71c88',nowPage,maxPerPage)
+fetchImages(KEY,nowPage,maxPerPage)
